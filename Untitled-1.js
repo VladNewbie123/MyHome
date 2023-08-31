@@ -1,11 +1,3 @@
-while(true){
-const name = prompt('Введите 123: ');
-if(name=='123'){
-alert('Добро пожаловать');
-break;
-}
-}
-
 var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
