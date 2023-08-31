@@ -1,0 +1,698 @@
+/* скрываем чекбокс */
+
+#menu__toggle {
+    opacity: 0;
+}
+
+
+/* стилизуем кнопку */
+
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* добавляем "гамбургер" */
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+
+/* контейнер меню */
+
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: -100%;
+    left: -140px;
+    width: 200px;
+    height: 230px;
+    margin: 0;
+    padding: 50px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #04afff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+
+/* элементы меню */
+
+.menu__item {
+    display: block;
+    padding: -10px 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #2a85ec;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    top: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: .25s;
+}
+
+.menu__box {
+    transition-duration: .25s;
+}
+
+.menu__item {
+    transition-duration: .25s;
+}
+
+.p1 {
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.p2 {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.p3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 310px;
+    font-size: 30px;
+    color: white;
+}
+
+.p5 {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.p6 {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topblog {
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgb(0, 119, 255);
+    height: 70px;
+    width: 1247px;
+    box-shadow: 0 10px 15px 0 rgba(56, 55, 55, 0.44);
+    margin-left: 16.5%;
+    margin-top: -77px;
+}
+
+.topblog1 {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(0, 98, 255);
+    height: 50px;
+    width: 280px;
+    border-right: 4px solid rgb(0, 225, 255);
+    border-left: 4px solid rgb(0, 225, 255);
+    margin-left: 0px;
+}
+
+.topblog2 {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(0, 98, 255);
+    height: 50px;
+    width: 250px;
+    border-right: 4px solid rgb(0, 225, 255);
+    border-left: 4px solid rgb(0, 225, 255);
+    margin-left: 280px;
+}
+
+.topblog3 {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(0, 98, 255);
+    height: 50px;
+    width: 260px;
+    border-right: 4px solid rgb(0, 225, 255);
+    border-left: 4px solid rgb(0, 225, 255);
+    margin-left: 530px;
+}
+
+.topblog4 {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(0, 98, 255);
+    height: 50px;
+    width: 220px;
+    border-right: 4px solid rgb(0, 225, 255);
+    border-left: 4px solid rgb(0, 225, 255);
+    margin-left: 790px;
+}
+
+.topblog5 {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(0, 98, 255);
+    height: 50px;
+    width: 230px;
+    border-right: 4px solid rgb(0, 225, 255);
+    border-left: 4px solid rgb(0, 225, 255);
+    margin-left: 1010px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    min-width: 790px;
+    min-height: 780px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/1618668731_25-funart_pro-p-gorod-dnepr-ukraina-krasivie-mesta-foto-27.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blog {
+    position: relative;
+    width: 80%;
+    min-width: 1300px;
+    height: fit-content;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main {
+    margin-top: 0px;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+}
+
+h1 {
+    margin-left: 50%;
+}
+
+.p4 {
+    position: absolute;
+    text-align: justify;
+    width: 70%;
+    font-size: 30px;
+    margin-left: 320px;
+    margin-top: -250px;
+}
+
+h2 {
+    margin-left: 25px;
+}
+
+ul {
+    font-size: 25px;
+    margin-left: 300px;
+    margin-top: -200px;
+}
+
+.img1 {
+    margin-left: 10px;
+}
+
+.p9 {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(182, 172, 172);
+    margin-top: -20px;
+}
+
+p {
+    text-indent: 25px;
+}
+
+.p1 {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.p1:after {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 25;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #e6ff04;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.p1:hover:after,
+.p1:focus:after {
+    width: 84%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.p2 {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.p2:after {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 50;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #e6ff04;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.p2:hover:after,
+.p2:focus:after {
+    width: 70%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.p3 {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.p3:after {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 55;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #e6ff04;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.p3:hover:after,
+.p3:focus:after {
+    width: 45%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.p5 {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.p5:after {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 55;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #e6ff04;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.p5:hover:after,
+.p5:focus:after {
+    width: 55%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.p6 {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+.p6:after {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 50;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #e6ff04;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.p6:hover:after,
+.p6:focus:after {
+    width: 45%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.textfon {
+    text-align: justify;
+    width: 1050px;
+    height: fit-content;
+    font-size: 41px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 21%;
+    margin-top: -800px;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.blog0 {
+    margin-top: 80px;
+    width: 95%;
+    height: 1100px;
+    margin-left: 2%;
+}
+
+.img2 {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.img3 {
+    width: 300px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 83%;
+    margin-top: -450px;
+    border-radius: 10px;
+}
+
+.img4 {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.img5 {
+    width: 300px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 83%;
+    margin-top: -450px;
+    border-radius: 10px;
+}
+@media (min-width: 1366px) and (max-width: 1440px){
+    .topblog {
+        margin-left: 50px;
+    }
+    .textfon {
+        font-size: 38px;
+        width: 820px;
+        margin-left: 18%;
+        margin-top: -690px;
+    }
+    .img2 {
+        width: 230px;
+        margin-left: -15px;
+    }
+    .img3 {
+        width: 230px;
+        height: 340px;
+        margin-top: -350px;
+        margin-left: 84%;
+    }
+    .img4 {
+        width: 230px;
+        margin-top: 10px;
+        margin-left: -15px;
+    }
+    .img5 {
+        width: 230px;
+        height: 350px;
+        margin-top: -350px;
+        margin-left: 84%;
+    }
+    .menu__box {
+        left: 0;
+    }
+    .blog {
+        margin-left: 2%;
+        margin-top: -300px;
+        width: 100px;
+    }
+    .blog0 {
+        margin-left: 25px;
+        width: 1240px;
+    }
+}
+
+@media (max-width: 1366px){
+    .topblog {
+        margin-left: 30px;
+    }
+    .textfon {
+        font-size: 38px;
+        width: 780px;
+        margin-left: 18%;
+        margin-top: -690px;
+    }
+    .img2 {
+        width: 230px;
+        margin-left: -15px;
+    }
+    .img3 {
+        width: 230px;
+        height: 340px;
+        margin-top: -350px;
+        margin-left: 84%;
+    }
+    .img4 {
+        width: 230px;
+        margin-top: 10px;
+        margin-left: -15px;
+    }
+    .img5 {
+        width: 230px;
+        height: 350px;
+        margin-top: -350px;
+        margin-left: 84%;
+    }
+    .menu__box {
+        left: 0;
+    }
+    .blog {
+        margin-left: 1%;
+        margin-top: -300px;
+        width: 100px;
+    }
+    .blog0 {
+        margin-left: 25px;
+        width: 1240px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .topblog {
+        margin-left: 155px;
+    }
+    .blog0 {
+        margin-left: 70px;
+        width: 100%;
+        height: 800px;
+        margin-top: 100px;
+    }
+    .img2 {
+        width: 250px;
+        margin-left: 10px;
+    }
+    .img3 {
+        width: 250px;
+        height: 375px;
+        margin-top: -350px;
+        margin-left: 910px;
+    }
+    .img4 {
+        width: 250px;
+        height: 375px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    .img5 {
+        width: 250px;
+        height: 375px;
+        margin-top: 0px;
+        margin-left: 910px;
+    }
+    .textfon {
+        margin-top: -700px;
+        margin-left: 270px;
+        font-size: 35px;
+        width: 895px;
+    }
+    .blog {
+        margin-left: 135px;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .topblog {
+        margin-left: 15.5%;
+    }
+    .blog0 {
+        margin-left: 190px;
+        width: 1430px;
+        height: 800px;
+        margin-top: 100px;
+    }
+    .img2 {
+        width: 250px;
+        margin-left: 10px;
+    }
+    .img3 {
+        width: 250px;
+        height: 375px;
+        margin-top: -350px;
+        margin-left: 910px;
+    }
+    .img4 {
+        width: 250px;
+        height: 375px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    .img5 {
+        width: 250px;
+        height: 375px;
+        margin-top: 0px;
+        margin-left: 910px;
+    }
+    .textfon {
+        margin-top: -700px;
+        margin-left: 270px;
+        font-size: 35px;
+        width: 895px;
+    }
+    .blog {
+        margin-left: 9%;
+        margin-top: 0px;
+        width: 1480px;
+    }
+}

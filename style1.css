@@ -1,0 +1,280 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    min-width: 790px;
+    min-height: 780px;
+}
+
+header {
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/shutterstock_730964005\ \(1\).jpg);
+    height: 650px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.text {
+    margin-top: 298px;
+    height: 300px;
+    margin-left: 94px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 800px;
+}
+
+.text1 {
+    position: absolute;
+    font-size: 40px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 1500px;
+    min-width: 1500px;
+    margin-left: 410px;
+    margin-top: -25px;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    background-color: rgb(19, 103, 238, 0.85);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.imgL {
+    width: 650px;
+    height: 350px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.imgR {
+    width: 650px;
+    height: 350px;
+    margin-left: 905px;
+    margin-top: 40px;
+}
+
+.textR {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: -300px;
+    font-size: 25px;
+    text-align: justify;
+    height: fit-content;
+    width: 650px;
+}
+
+.textL {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: -300px;
+    font-size: 25px;
+    text-align: justify;
+    height: fit-content;
+    width: 650px;
+}
+
+main {
+    margin-top: 650px;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-image: url(./img/1640711885_5-abrakadabra-fun-p-shablon-istoriya-5.jpg);
+    background-size: 100% 50%;
+}
+
+.img1 {
+    position: absolute;
+    width: auto;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+footer {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(182, 172, 172);
+    margin-top: 5465px;
+}
+
+.p8 {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.h1L {
+    position: absolute;
+    margin-left: 850px;
+}
+
+.h1R {
+    position: absolute;
+    margin-left: 215px;
+}
+
+p {
+    text-indent: 25px;
+}
+
+hr {
+    opacity: 0.3;
+    margin-top: 90px;
+}
+
+@media (min-width: 1366px) and (max-width: 1440px){
+    .text1 {
+        margin-left: 75px;
+        font-size: 32.5px;
+        margin-top: -15px;
+        background-color: coral;
+    }
+    .h1L {
+        margin-left: 750px;
+        width: 400px;
+    }
+    .h1R {
+        margin-left: 100px;
+        width: 550px;
+    }
+    .imgL {
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    .imgR {
+        margin-left: 670px;
+    }
+    .textL {
+        margin-left: 90px;
+        width: 550px;
+    }
+    .textR {
+        margin-left: 750px;
+        margin-top: -380px;
+        width: 500px;
+    }
+    footer {
+        margin-top: 5715px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .text1 {
+        margin-left: 75px;
+        font-size: 32.5px;
+        margin-top: -15px;
+    }
+    .h1L {
+        margin-left: 750px;
+        width: 400px;
+    }
+    .h1R {
+        margin-left: 100px;
+        width: 550px;
+    }
+    .imgL {
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    .imgR {
+        margin-left: 670px;
+    }
+    .textL {
+        margin-left: 90px;
+        width: 550px;
+    }
+    .textR {
+        margin-left: 750px;
+        margin-top: -380px;
+        width: 500px;
+    }
+    footer {
+        margin-top: 5715px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .text1 {
+        margin-left: 75px;
+        font-size: 32.5px;
+        margin-top: -15px;
+    }
+    .h1L {
+        margin-left: 52%;
+        margin-top: 100px;
+    }
+    .h1R {
+        margin-left: 80px;
+        width: 550px;
+    }
+    .imgL {
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    .imgR {
+        margin-left: 53%;
+    }
+    .textL {
+        margin-left: 90px;
+        width: 45%;
+    }
+    .textR {
+        margin-left: 750px;
+        margin-top: -300px;
+        width: 45%;
+    }
+    footer {
+        margin-top: 5715px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .text1 {
+        margin-left: 75px;
+        font-size: 32.5px;
+        margin-top: -15px;
+    }
+    .h1L {
+        margin-left: 53%;
+        margin-top: 100px;
+    }
+    .h1R {
+        margin-left: 7%;
+        width: 700px;
+        margin-top: 70px;
+    }
+    .imgL {
+        margin-left: 12%;
+        margin-top: 90px;
+    }
+    .imgR {
+        margin-left: 55%;
+    }
+    .textL {
+        margin-left: 7%;
+        width: 40%;
+        margin-top: -280px;
+    }
+    .textR {
+        margin-left: 53%;
+        margin-top: -300px;
+        width: 40%;
+    }
+    footer {
+        margin-top: 5715px;
+    }
+}

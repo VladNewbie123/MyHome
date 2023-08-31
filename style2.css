@@ -1,0 +1,141 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    min-width: 790px;
+    min-height: 780px;
+}
+
+header {
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/shutterstock_730964005\ \(1\).jpg);
+    height: 650px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.text {
+    margin-top: 298px;
+    height: 300px;
+    margin-left: 94px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 800px;
+}
+
+.text1 {
+    position: absolute;
+    font-size: 40px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    max-width: 1500px;
+    min-width: 1500px;
+    margin-left: 410px;
+    margin-top: -25px;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    background-color: rgb(19, 103, 238, 0.85);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.img1 {
+    position: absolute;
+    width: auto;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.p4 {
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 240px;
+    margin-top: -120px;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.p5 {
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 240px;
+    margin-top: 50px;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+main {
+    margin-top: 670px;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+}
+
+.p9 {
+    margin-left: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+@media (min-width: 1366px) and (max-width: 1440px) {
+    .text1 {
+        font-size: 35px;
+        margin-left: 120px;
+        margin-top: -12px;
+    }
+    .p4{
+        min-width: 880;
+    }
+    .p5{
+        min-width: 880;
+    }
+    h1{
+        min-width: 1050px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .text1 {
+        font-size: 35px;
+        margin-left: 120px;
+        margin-top: -12px;
+    }
+    .p4{
+        min-width: 880;
+    }
+    .p5{
+        min-width: 880;
+    }
+    h1{
+        min-width: 1050px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .text1 {
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .text1 {
+        margin-left: 120px;
+    }
+}
